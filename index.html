@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Survey Form</h1>
+      <div id="form">
+      <form id="surveyForm">
+      <label for="name">Name</label><br />
+      <input type="text" name="name" id="name" /><br />
+      <label for="email">Email</label><br />
+      <input type="email" name="email" id="email"  /><br />
+      <label for="Satisfaction">Satisfaction</label><br>
+      <select name="Satisfaction" id="Satisfaction"><br>
+        <option value="Very Satisfied">Very Satisfied</option><br>
+        <option value="Satisfied">Satisfied</option><br>
+        <option value="Neutral">Neutral</option><br>
+        <option value="Dissatisfied">Dissatisfied</option><br>
+        <option value="Very dissatisfied">Very dissatisfied</option><br>
+      </select>
+      <br>
+      <label for="Recommendation">Would you recommend us to a friend.</label><br>
+      <input type="radio" name="Recommendation" id="Yes">Yes</input><br>
+      <input type="radio" name="Recommendation" id="No" >No</input><br>
+      <label for="Additional Comments">Additional Comments</label><br>
+      <input type="text" id="Comments"><br>
+      <br>
+      <button type="submit" id="submitBtn">Submit</button>
+      </form>
+      </div>
+      <div id="formFeedback">
+        <p></p>
+      </div>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
